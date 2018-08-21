@@ -9,7 +9,7 @@ public class ResponseData {
 
     private String code;
 
-    private String message;
+    private String msg;
 
     private Object data;
 
@@ -21,12 +21,12 @@ public class ResponseData {
         this.code = code;
     }
 
-    public String getMessage() {
-        return message;
+    public String getMsg() {
+        return msg;
     }
 
-    public void setMessage(String message) {
-        this.message = message;
+    public void setMsg(String msg) {
+        this.msg = msg;
     }
 
     public Object getData() {
@@ -41,7 +41,7 @@ public class ResponseData {
     public String toString() {
         return "ResponseData{" +
                 "code='" + code + '\'' +
-                ", message='" + message + '\'' +
+                ", msg='" + msg + '\'' +
                 ", data=" + data +
                 '}';
     }

@@ -2,12 +2,15 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans        http://www.springframework.org/schema/beans/spring-beans.xsd        http://code.alibabatech.com/schema/dubbo        http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans        http://www.springframework.org/schema/beans/spring-beans.xsd        http://code.alibabatech.com/schema/dubbo        http://code.alibabatech.com/schema/dubbo/dubbo.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <dubbo:application name="gmall-sso" owner="lee9213"/>
+    <context:property-placeholder location="classpath*:application.properties"/>
 
-    <dubbo:registry protocol="zookeeper" group="dubbo-gmall"
-                    address="192.168.0.18:2181"/>
+    <dubbo:application name="${dubbo.application.name}" owner="${dubbo.application.owner}"/>
+
+    <dubbo:registry protocol="zookeeper" group="${dubbo.registry.group}"
+                    address="${dubbo.registry.zookeeper.servers}" file="${dubbo.registry.cache.dir}/gmall-user.cache"/>
 
     <import resource="classpath*:consumer/dubbo-consumer-service.xml"/>
 

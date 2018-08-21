@@ -1,5 +1,7 @@
 package com.lee9213.user.service;
 
+import com.lee9213.user.dto.CheckAuthRequest;
+import com.lee9213.user.dto.CheckAuthResponse;
 import com.lee9213.user.dto.UserLoginRequest;
 import com.lee9213.user.dto.UserLoginResponse;
 
@@ -17,4 +19,13 @@ public interface IUserCoreService {
      * @return
      */
     UserLoginResponse login(UserLoginRequest request);
+
+
+    /**
+     * 校验token
+     *
+     * @param request
+     * @return
+     */
+    CheckAuthResponse validToken(CheckAuthRequest request);
 }

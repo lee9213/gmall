@@ -103,22 +103,22 @@
         <!--mybatis and mysql-->
 
 
-        <!--<dependency>
+        <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>servlet-api</artifactId>
-            <version>2.5</version>
-            <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>javax.servlet.jsp</groupId>
             <artifactId>jsp-api</artifactId>
-            <version>2.2</version>
-            <scope>compile</scope>
-        </dependency>-->
+        </dependency>
 
         <dependency>
             <groupId>com.lee9213</groupId>
             <artifactId>gmall-user-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.lee9213</groupId>
+            <artifactId>gmall-common</artifactId>
         </dependency>
 
     </dependencies>

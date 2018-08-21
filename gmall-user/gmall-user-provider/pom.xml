@@ -125,5 +125,10 @@
             <artifactId>gmall-user-api</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>com.lee9213</groupId>
+            <artifactId>gmall-common</artifactId>
+        </dependency>
+
     </dependencies>
 </project>
