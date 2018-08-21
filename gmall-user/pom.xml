@@ -15,7 +15,6 @@
     <modules>
         <module>gmall-user-api</module>
         <module>gmall-user-provider</module>
-        <module>gmall-user-consumer</module>
     </modules>
 
     <properties>

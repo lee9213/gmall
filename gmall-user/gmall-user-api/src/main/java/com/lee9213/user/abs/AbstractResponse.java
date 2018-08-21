@@ -7,7 +7,7 @@ import java.io.Serializable;
  * @version 1.0
  * @date 2018-08-21 13:32
  */
-public class AbstractResponse implements Serializable {
+public abstract class AbstractResponse implements Serializable {
 
     private static final long serialVersionUID = -4355995461088968120L;
 
