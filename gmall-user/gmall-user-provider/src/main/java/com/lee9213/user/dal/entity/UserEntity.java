@@ -91,4 +91,19 @@ public class UserEntity {
     public void setCreateTime(Date createTime) {
         this.createTime = createTime;
     }
+
+    @Override
+    public String toString() {
+        return "UserEntity{" +
+                "id=" + id +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", realname='" + realname + '\'' +
+                ", avatar='" + avatar + '\'' +
+                ", mobile='" + mobile + '\'' +
+                ", sex='" + sex + '\'' +
+                ", status=" + status +
+                ", createTime=" + createTime +
+                '}';
+    }
 }

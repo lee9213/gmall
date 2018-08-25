@@ -10,4 +10,7 @@ import com.lee9213.user.dal.entity.UserEntity;
 public interface IUserMapper {
 
     UserEntity getUserByUserName(String userName);
+
+    int insert(UserEntity user);
+
 }
