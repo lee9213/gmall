@@ -101,7 +101,15 @@
             <artifactId>druid</artifactId>
         </dependency>
         <!--mybatis and mysql-->
+        <dependency>
+            <groupId>org.springframework.kafka</groupId>
+            <artifactId>spring-kafka</artifactId>
+        </dependency>
 
+        <dependency>
+            <groupId>com.github.penggle</groupId>
+            <artifactId>kaptcha</artifactId>
+        </dependency>
 
         <dependency>
             <groupId>javax.servlet</groupId>
