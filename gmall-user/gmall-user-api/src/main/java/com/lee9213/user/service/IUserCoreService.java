@@ -1,9 +1,6 @@
 package com.lee9213.user.service;
 
-import com.lee9213.user.dto.CheckAuthRequest;
-import com.lee9213.user.dto.CheckAuthResponse;
-import com.lee9213.user.dto.UserLoginRequest;
-import com.lee9213.user.dto.UserLoginResponse;
+import com.lee9213.user.dto.*;
 
 /**
  * @author lee9213@163.com
@@ -28,4 +25,12 @@ public interface IUserCoreService {
      * @return
      */
     CheckAuthResponse validToken(CheckAuthRequest request);
+
+    /**
+     * 注册
+     * @param userRegisterRequest
+     * @return
+     */
+    UserRegisterResponse register(UserRegisterRequest userRegisterRequest);
+
 }
