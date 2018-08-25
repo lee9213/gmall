@@ -19,7 +19,7 @@
         select <include refid="Base_Column_List"/> from user where id=#{uid}
     </select>
 
-    <insert id="insertSelective" parameterType="com.lee9213.user.dal.entity.UserEntity" keyColumn="id" useGeneratedKeys="true">
+    <insert id="insert" parameterType="com.lee9213.user.dal.entity.UserEntity"  keyProperty="id" useGeneratedKeys="true">
         insert into user
         <trim prefix="(" suffix=")" suffixOverrides=",">
             <if test="username != null">
